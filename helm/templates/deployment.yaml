@@ -31,7 +31,7 @@ spec:
               name: rpc
           volumeMounts:
             - name: {{ .Values.storage.volumeName }}
-              mountPath: ~/.mychain
+              mountPath: /home/tendermint # todo change to conf value
           command:
             - ignite
             - chain
